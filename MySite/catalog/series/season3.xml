@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<episodes>
+<episode id="1">
+<number>1</number>
+<name>Déjà-vu</name>
+<date>27.06.2020</date>
+</episode>
+<episode id="2">
+<number>2</number>
+<name>Die Überlebende</name>
+<date>27.06.2020</date>
+</episode>
+<episode id="3">
+<number>3</number>
+<name>Adam und Eva</name>
+<date>27.06.2020</date>
+</episode>
+<episode id="4">
+<number>4</number>
+<name>Der Ursprung</name>
+<date>27.06.2020</date>
+</episode>
+<episode id="5">
+<number>5</number>
+<name>Leben und Tod</name>
+<date>27.06.2020</date>
+</episode>
+<episode id="6">
+<number>6</number>
+<name>Licht und Schatten</name>
+<date>27.06.2020</date>
+</episode>
+<episode id="7">
+<number>7</number>
+<name>Zwischen der Zeit</name>
+<date>27.06.2020</date>
+</episode>
+<episode id="8">
+<number>8</number>
+<name>Das Paradies</name>
+<date>27.06.2020</date>
+</episode>
+</episodes>

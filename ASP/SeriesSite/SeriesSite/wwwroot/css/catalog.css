@@ -1,0 +1,134 @@
+
+body {
+    background-image: none;
+}
+/*Навигация*/
+.page-header {
+    margin: 0 0;
+}
+.heading {
+    margin: 0 0;
+}
+
+/* Каталог ----------------- */
+.product-list {
+    padding: 3%;
+}
+
+.product-list-1-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product-card-wrapper {
+    padding: 3% 1%;
+}
+
+    .product-card-wrapper a {
+        text-decoration: none;
+    }
+
+.product-card-bottom-description_Name {
+    font: 18px/18px Candara, regular;
+    color: #000000;
+}
+
+.product-card-bottom-description_text {
+    font: 16px/16px Candara, regular;
+    color: #000000;
+}
+
+.product-card-bottom-description_measurement {
+    font: 12px/12px Candara, regular;
+    color: #000000;
+}
+
+.product-card-bottom-price_number {
+    font: 14px/14px Candara, regular;
+    color: #000000;
+}
+
+.product-card-bottom-price_icon {
+    font: 14px/14px Candara, regular;
+    color: #000000;
+}
+
+.btn_adding {
+    background-color: #f5f5f5;
+    font: 14px/14px Candara, regular;
+    color: #000000;
+    border: 1px solid #7e7e7e;
+    padding: 5px 5px 5px 5px;
+    display: inline-block;
+    border-radius: 1px;
+}
+
+.btn-primary {
+    background-color: #f5f5f5;
+    font: 14px/14px Candara, regular;
+    color: #000000;
+    padding: 5px 5px 5px 5px;
+    margin-left: auto;
+}
+
+/* фильтры ----------------- */
+.okno-filters {
+    width: 30%;
+    height: auto;
+    text-align: center;
+    padding: 2% 5%;
+    border: 1px solid #7e7e7e;
+    color: #000000;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-right: auto;
+    display: none;
+}
+
+.center_text {
+    text-align: center;
+    color: #000000;
+    font: 16px/16px Candara, regular;
+    padding: 2% 0%;
+}
+
+.price_sort, .name_sort, .new_sort, .plp-radio-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.plp-radio__symbol {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #929292;
+    border-radius: 64px;
+    flex-shrink: 0;
+}
+
+.range-field {
+    width: 15.625vw;
+}
+
+.filter-bar-wrapper {
+    padding: 0% 0% 2% 0%;
+}
+
+.filter-bar {
+    display: flex;
+}
+
+
+.filter-bar-right {
+    margin-right: auto;
+}
+
+
+.show {
+    display: block;
+}

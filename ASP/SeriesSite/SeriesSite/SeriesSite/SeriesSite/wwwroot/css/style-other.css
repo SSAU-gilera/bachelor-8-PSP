@@ -1,0 +1,147 @@
+body {
+  background-image: none;
+}
+
+
+/*Навигация*/
+.page-header {
+  margin: 0 0 70px;
+}
+
+
+/*Основной блок*/
+.subheading {
+  margin: 0 0 52px;
+  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+/*Для about*/
+.about {
+  margin: 0 0 120px;
+}
+.image-about {
+  margin: 0 0 32px;
+  max-width: 870px;
+  height: auto;
+}
+.about h2{
+  margin: 0 12 12px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+}
+.about p {
+  margin: 0 0 32px;
+}
+
+.up{
+  padding: 0 70px;
+  float: right;
+}
+
+.button-up {
+  padding: 6px 20px;
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: #331d35;
+  color: #ffffff;
+}
+
+
+/*Для news*/
+.container-news {
+    max-width: 928px;
+    height: 200px;
+}
+.news {
+  margin: 0 0 120px;
+}
+.news h2{
+  margin: 0 12 12px;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.news p {
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0 0 12px;
+}
+.image-news{
+  max-width: 300px;
+  height: auto;
+  float: left;
+  margin: 10px 10px 10px 0;
+}
+
+/*Для добавления сериала*/
+.container-addseries {
+    max-width: 928px;
+    height: 900px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.addseries {
+  margin: 0 0 100px;
+  box-sizing: border-box;
+}
+
+
+
+.addseries input[type=text], select, textarea{
+    width: 96%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.addseries p{
+    color: #cf2424;
+}
+
+.addseries label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.addseries input[type=submit] {
+    background-color: #9084b8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.addseries input[type=submit]:hover {
+    background-color: #331d35;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

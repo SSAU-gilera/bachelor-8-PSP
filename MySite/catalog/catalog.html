@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script><!-- Modernizr -->
+
+  	
+	<title>Сериал.есть - Каталог</title>
+</head>
+<body>
+
+    <header class="page-header">
+    <ul>
+      <li><a href="../index.html">Главная</a></li>
+      <li><a href="../about.html">О сериалах</a></li>
+      <li><a href="../news.html">Новости</a></li>
+      <li style="float:right"><a class="active">Каталог</a></li>
+    </ul>
+    <div class="hat"></div>
+    </header>
+
+	<main class="cd-main-content">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder"> 
+						<a data-type="all" href="#0">Все</a> <!-- selected option on mobile -->
+					</li> 
+					<li class="filter"><a class="selected" href="#0" data-type="all">Все</a></li>
+					<li class="filter" data-filter=".top"><a href="#0" data-type="color-1">В топе</a></li>
+					<li class="filter" data-filter=".mini"><a href="#0" data-type="color-2">Мини-сериалы</a></li>
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+		</div> <!-- cd-tab-filter-wrapper -->
+
+		<section class="cd-gallery">
+			<ul>
+				<li class="mix usa mini drama" title="Ход Королевы">
+					<a href="series/001.html">
+					<img src="img/001.jpg" alt="Ход Королевы"></li></a>
+				<li class="mix germany usa thriller fiction drama" title="Тьма">
+					<a href="series/002.html">
+					<img src="img/002.jpg" alt="Тьма"></li></a>
+				<li class="mix norway drama melodrama" title="Стыд">
+					<a href="series/003.html">
+					<img src="img/003.jpg" alt="Стыд"></li></a>
+				<li class="mix uk mini fiction drama" title="Годы">
+					<a href="series/004.html">
+					<img src="img/004.jpg" alt="Годы"></li></a>
+				<li class="mix usa top fantasy action thriller drama" title="Волчонок">
+					<a href="series/005.html">
+					<img src="img/005.jpg" alt="Волчонок"></li></a>
+				<li class="mix uk top fiction drama melodrama" title="Отбросы">
+					<a href="series/006.html">
+					<img src="img/006.jpg" alt="Отбросы"></li></a>
+				<li class="mix usa musical drama comedy" title="Хор">
+					<a href="series/007.html">
+					<img src="img/007.jpg" alt="Хор"></li></a>
+				<li class="mix usa uk top mini drama historical" title="Чернобыль">
+					<a href="series/008.html">
+					<img src="img/008.jpg" alt="Чернобыль"></li></a>
+				<li class="mix usa uk top fantasy drama melodrama action" title="Игра престолов">
+					<a href="series/009.html">
+					<img src="img/009.jpg" alt="Игра престолов"></li></a>
+				<li class="mix usa detective thriller drama" title="Как избежать наканазние за убийство">
+					<a href="series/010.html">
+					<img src="img/010.jpg" alt="Как избежать наканазние за убийство" title=""></li></a>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+			<div class="cd-fail-message">Ничего не найдено</div>
+		</section> <!-- cd-gallery -->
+
+		<div class="cd-filter">
+			<form>
+				<div class="cd-filter-block">
+					<h4>Поиск</h4>
+					<div class="cd-filter-content">
+						<input type="search" placeholder="Поиск сериала">
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Жанр</h4>
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".detective" 
+							type="checkbox" id="detective">
+			    			<label class="checkbox-label" for="detective">Детектив</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".horror" 
+							type="checkbox" id="horror">
+							<label class="checkbox-label" for="horror">Ужасы</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".thriller" 
+							type="checkbox" id="thriller">
+							<label class="checkbox-label" for="thriller">Триллер</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".drama" 
+							type="checkbox" id="drama">
+							<label class="checkbox-label" for="drama">Драма</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".fiction" 
+							type="checkbox" id="fiction">
+							<label class="checkbox-label" for="fiction">Фантастика</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".melodrama" 
+							type="checkbox" id="melodrama">
+							<label class="checkbox-label" for="melodrama">Мелодрама</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".fantasy" 
+							type="checkbox" id="fantasy">
+							<label class="checkbox-label" for="fantasy">Фэнтези</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".action" 
+							type="checkbox" id="action">
+							<label class="checkbox-label" for="action">Боевик</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".musical" 
+							type="checkbox" id="musical">
+							<label class="checkbox-label" for="musical">Мюзикл</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".comedy" 
+							type="checkbox" id="comedy">
+							<label class="checkbox-label" for="comedy">Комедия</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".historical" 
+							type="checkbox" id="historical">
+							<label class="checkbox-label" for="historical">История</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".sport" 
+							type="checkbox" id="sport">
+							<label class="checkbox-label" for="sport">Спорт</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Страна</h4>		
+					<div class="cd-filter-content">
+						<div class="cd-select cd-filters">
+							<select class="filter" name="country" id="country">
+								<option value="">Выбрать страну</option>
+								<option value=".usa">США</option>
+								<option value=".uk">Великобритания</option>
+								<option value=".germany">Германия</option>
+								<option value=".norway">Норвегия</option>
+								<option value=".russia">Россия</option>
+								<option value=".ukraine">Украина</option>
+								<option value=".canada">Канада</option>
+							</select>
+						</div> <!-- cd-select -->
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="side-filter-block">
+					<h4><a href="../addseries.html">+ Добавить сериал</a></h4>
+				</div>
+
+			</form>
+
+			<a href="#0" class="cd-close">✖</a>
+		</div> <!-- cd-filter -->
+
+		<a href="#0" class="cd-filter-trigger">Фильтры</a>
+	</main> <!-- cd-main-content -->
+ <script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/main.js"></script <!-- Resource jQuery -->
+</body>
+</html>

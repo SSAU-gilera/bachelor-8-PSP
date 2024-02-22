@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style-series.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+
+    <title>Сериал.есть - Тьма</title>
+  </head>
+
+
+  <body>
+    <header class="page-header">
+    <ul>
+      <li><a href="../../index.html">Главная</a></li>
+      <li><a href="../../about.html">О сериалах</a></li>
+      <li><a href="../../news.html">Новости</a></li>
+      <li style="float:right"><a href="../../catalog/catalog.html">Каталог</a></li>
+    </ul>
+    </header>
+
+    <main>
+      <div class="series">
+        <div class="container">
+          <div class="container-general">
+            <img class="poster" src="../img/002.jpg">
+            <h1>Тьма</h1>
+            <p class="originalname">Dark</p>
+            <table cellspacing="10" width="470">
+              <tr><td><b>Год выхода:</b></td><td>2017</td></tr>
+              <tr><td><b>Страна:</b></td><td>Германия, США</td></tr>
+              <tr><td><b>Жанр:</b></td><td>триллер, фантастика, драма</td></tr>
+              <tr><td><b>Режиссер:</b></td><td>Баран бо Одар</td></tr>
+              <tr><td><b>Бюджет:</b></td><td>-</td></tr>
+              <tr><td><b>Премьера в мире:</b></td><td>1 декабря 2017</td></tr>
+              <tr><td><b>Возраст:</b></td><td>18+</td></tr>
+              <tr><td><b>Длительность серии:</b></td><td>60 минут</td></tr>
+              <tr><td><b>Общее время:</b></td><td>1 день 6 минут</td></tr>
+              <tr><td><b>Рейтинг:</b></td><td>8,1</td></tr>
+            </table>
+          </div>
+          <div class="container-descr">
+            <h2>Описание</h2>
+            <p> В небольшом немецком городе Винден, расположенном рядом с атомной электростанцией, пропадает мальчик, и четыре семьи оказываются вовлеченными в его поиск.</p>
+            <p>В «Тьме» ищут не только ребенка, но и ответы на вопросы, которые долгое время замалчивались в этих семьях и в этом дождливом городе. То, что они находят, оказывается намного больше и страшнее, чем ожидает зритель, ведь в поисках мальчика, они находят настоящую Тьму.</p>
+          </div>
+          <div class = "container-episodes">
+            <h2>Список серий</h2>
+
+            <input type='button' value='1 сезон  ▼' onclick='extract1()'/>
+            <input type='button' value='2 сезон  ▼' onclick='extract2()'/>
+            <input type='button' value='3 сезон  ▼' onclick='extract3()'/>
+            <br /> <br />
+            <div id='res'></div>
+
+<!--             <div class="slide">
+              <label for="s1">
+                <h3>1 сезон  ▼</h3>
+              </label>
+              <input type="checkbox" id="s1"/>
+                <table class="episodes">
+                  <tr>
+                    <th width="100px">№ серии</th>
+                    <th width="400px">Название</th>
+                    <th width="200px">Дата выхода</th>
+                  </tr>
+                  <tr><td>1</td><td class="text-left">Geheimnisse</td><td>01.12.2017</td></tr>
+                  <tr><td>2</td><td class="text-left">Lügen</td><td>01.12.2017</td></tr>
+                  <tr><td>3</td><td class="text-left">Gestern und Heute</td><td>01.12.2017</td></tr>
+                  <tr><td>4</td><td class="text-left">Doppelleben</td><td>01.12.2017</td></tr>
+                  <tr><td>5</td><td class="text-left">Wahrheiten</td><td>01.12.2017</td></tr>
+                  <tr><td>6</td><td class="text-left">Sic Mundus Creatus Est</td><td>01.12.2017</td></tr>
+                  <tr><td>7</td><td class="text-left">Kreuzwege</td><td>01.12.2017</td></tr>
+                  <tr><td>8</td><td class="text-left">Was man sät, das wird man ernten</td><td>01.12.2017</td></tr>
+                  <tr><td>9</td><td class="text-left">Alles ist jetzt</td><td>01.12.2017</td></tr>
+                  <tr><td>10</td><td class="text-left">Alpha und Omega</td><td>01.12.2017</td></tr>
+                </table>
+            </div>    
+            <div class="slide">
+              <label for="s2">
+                <h3>2 сезон  ▼</h3>
+              </label>
+              <input type="checkbox" id="s2"/>
+                <table class="episodes">
+                  <tr>
+                    <th width="100px">№ серии</th>
+                    <th width="400px">Название</th>
+                    <th width="200px">Дата выхода</th>
+                  </tr>
+                  <tr><td>1</td><td class="text-left">Anfänge und Enden</td><td>21.06.2019</td></tr>
+                  <tr><td>2</td><td class="text-left">Dunkle Materie</td><td>21.06.2019</td></tr>
+                  <tr><td>3</td><td class="text-left">Gespenster</td><td>21.06.2019</td></tr>
+                  <tr><td>4</td><td class="text-left">Die Reisenden</td><td>21.06.2019</td></tr>
+                  <tr><td>5</td><td class="text-left">Vom Suchen und Finden</td><td>21.06.2019</td></tr>
+                  <tr><td>6</td><td class="text-left">Ein unendlicher Kreis</td><td>21.06.2019</td></tr>
+                  <tr><td>7</td><td class="text-left">Der weiße Teufel</td><td>21.06.2019</td></tr>
+                  <tr><td>8</td><td class="text-left">Enden und Anfänge</td><td>21.06.2019</td></tr>
+                </table>
+            </div>
+            <div class="slide">
+              <label for="s3">
+                <h3>3 сезон  ▼</h3>
+              </label>
+              <input type="checkbox" id="s3"/>
+                <table class="episodes">
+                  <tr>
+                    <th width="100px">№ серии</th>
+                    <th width="400px">Название</th>
+                    <th width="200px">Дата выхода</th>
+                  </tr>
+                  <tr><td>1</td><td class="text-left">Déjà-vu</td><td>27.06.2020</td></tr>
+                  <tr><td>2</td><td class="text-left">Die Überlebende</td><td>27.06.2020</td></tr>
+                  <tr><td>3</td><td class="text-left">Adam und Eva</td><td>27.06.2020</td></tr>
+                  <tr><td>4</td><td class="text-left">Der Ursprung</td><td>27.06.2020</td></tr>
+                  <tr><td>5</td><td class="text-left">Leben und Tod</td><td>27.06.2020</td></tr>
+                  <tr><td>6</td><td class="text-left">Licht und Schatten</td><td>27.06.2020</td></tr>
+                  <tr><td>7</td><td class="text-left">Zwischen der Zeit</td><td>27.06.2020</td></tr>
+                  <tr><td>8</td><td class="text-left">Das Paradies</td><td>27.06.2020</td></tr>
+                </table>
+            </div>
+          </div>
+           -->
+          <div class="container-video">
+            <h2>Видео</h2>
+            <iframe width="448" height="252" src="https://www.youtube.com/embed/6sI7pZuQZPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="448" height="252" src="https://www.youtube.com/embed/zrQSsCBR_Y0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        Контакты:
+        <a class="footer-email" href="mailto:lera.gizhik@gmail.com">lera.gizhik@gmail.com"</a>
+        <a class="footer-phone" href="tel:+79879173661">+7 (987) 917-36-61</a>
+      </div>
+    </footer>
+  </body>
+
+<script type='text/javascript'>
+function extract1(){
+   var xhttp=new XMLHttpRequest();
+   xhttp.onreadystatechange=function(){
+      if (xhttp.readyState==4 && xhttp.status==200){
+         var base="<table id='episodes'><tr><th>Номер серии</th><th>Название</th><th>Дата выхода</th></tr>";
+         var episode=xhttp.responseXML.getElementsByTagName('episode');
+         var number=xhttp.responseXML.getElementsByTagName('number');
+         var name=xhttp.responseXML.getElementsByTagName('name');
+         var date=xhttp.responseXML.getElementsByTagName('date');
+         for (var i=0;i<episode.length;i++){
+            base=base+'<tr>';
+            base=base+'<td>'+number[i].childNodes[0].nodeValue+'</td>';
+            base=base+'<td>'+name[i].childNodes[0].nodeValue+'</td>';
+            base=base+'<td>'+date[i].childNodes[0].nodeValue+'</td>';
+            base=base+'</tr>';
+         }
+      base=base+'</tr></table>';
+      document.getElementById('res').innerHTML=base;
+      }
+   }
+   xhttp.open('GET','season1.xml',true);
+   xhttp.send();
+}
+function extract2(){
+   var xhttp=new XMLHttpRequest();
+   xhttp.onreadystatechange=function(){
+      if (xhttp.readyState==4 && xhttp.status==200){
+         var base="<table id='episodes'><tr><th>Номер серии</th><th>Название</th><th>Дата выхода</th></tr>";
+         var episode=xhttp.responseXML.getElementsByTagName('episode');
+         var number=xhttp.responseXML.getElementsByTagName('number');
+         var name=xhttp.responseXML.getElementsByTagName('name');
+         var date=xhttp.responseXML.getElementsByTagName('date');
+         for (var i=0;i<episode.length;i++){
+            base=base+'<tr>';
+            base=base+'<td>'+number[i].childNodes[0].nodeValue+'</td>';
+            base=base+'<td>'+name[i].childNodes[0].nodeValue+'</td>';
+            base=base+'<td>'+date[i].childNodes[0].nodeValue+'</td>';
+            base=base+'</tr>';
+         }
+      base=base+'</tr></table>';
+      document.getElementById('res').innerHTML=base;
+      }
+   }
+   xhttp.open('GET','season2.xml',true);
+   xhttp.send();
+}
+function extract3(){
+   var xhttp=new XMLHttpRequest();
+   xhttp.onreadystatechange=function(){
+      if (xhttp.readyState==4 && xhttp.status==200){
+         var base="<table id='episodes'><tr><th>Номер серии</th><th>Название</th><th>Дата выхода</th></tr>";
+         var episode=xhttp.responseXML.getElementsByTagName('episode');
+         var number=xhttp.responseXML.getElementsByTagName('number');
+         var name=xhttp.responseXML.getElementsByTagName('name');
+         var date=xhttp.responseXML.getElementsByTagName('date');
+         for (var i=0;i<episode.length;i++){
+            base=base+'<tr>';
+            base=base+'<td>'+number[i].childNodes[0].nodeValue+'</td>';
+            base=base+'<td>'+name[i].childNodes[0].nodeValue+'</td>';
+            base=base+'<td>'+date[i].childNodes[0].nodeValue+'</td>';
+            base=base+'</tr>';
+         }
+      base=base+'</tr></table>';
+      document.getElementById('res').innerHTML=base;
+      }
+   }
+   xhttp.open('GET','season3.xml',true);
+   xhttp.send();
+}
+</script>
+
+
+</html>

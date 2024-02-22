@@ -1,0 +1,6 @@
+<table cellspacing="10" width="385">
+      <tr><td><b>Год выхода:</b></td><td>2021</td></tr>
+      <tr><td><b>Страна:</b></td><td>Южная Корея</td></tr>
+      <tr><td><b>Жанр:</b></td><td>драма, триллер</td></tr>
+      <tr><td><b>Канал:</b></td><td>Netflix</td></tr>
+      </table>

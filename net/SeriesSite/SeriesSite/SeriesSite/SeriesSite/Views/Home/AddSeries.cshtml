@@ -1,0 +1,135 @@
+﻿@{
+    ViewBag.Title = "Сериал.есть - О сериалах";
+}
+<link rel="stylesheet" href="~/css/style-other.css" />
+
+<div class="addseries">
+    <div class="container">
+        <h1 class="subheading">Заполните форму</h1>
+        <div class="container-addseries">
+            @*<form method="post" onsubmit="return ValidForm()">*@
+            <form method="post">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">Название сериала</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="Name" placeholder="Введите название сериала.." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="originalname">Название в оригинале</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="originalname" name="OriginalName" placeholder="Введите название сериала в оригинале.." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="year">Год выпуска</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="year" name="Year" placeholder="Введите год выпуска сериала (1940-2029).." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Страна</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="country" name="Country" placeholder="Введите страну производства сериала.." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="genre">Жанр</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="genre" name="Genre" placeholder="Введите жанр сериала.." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="producer">Режиссёр</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="producer" name="Producer" placeholder="Введите имя режиссёра.." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="budget">Бюджет</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="budget" name="Budget" placeholder="Введите бюджет сериала.." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="premiere">Премьера в мире</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="premiere" name="Premiere" placeholder="Введите дату премьеры в мире.." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="age">Возраст</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="age" name="Age" placeholder="Введите ограничения по возрасту.." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="duration">Длительность серии</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="duration" name="Duration" placeholder="Введите среднюю длительность серии.." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="totaltime">Общее время</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="totaltime" name="Totaltime" placeholder="Введите общее время сериала.." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="rating">Рейтинг</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="rating" name="Rating" placeholder="Введите рейтинг.." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="description">Описание</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="description" name="Description" placeholder="Вставьте описание сериала.." required>
+                    </div>
+                </div>
+                <p class id="message">ᅠ ᅠ</p>
+                <div class="row">
+                    <input class="button" type="submit" value="Отправить форму">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

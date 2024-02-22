@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-other.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+    <title>Сериал.есть - О сериалах</title>
+  </head>
+
+  <body>
+    
+    <header class="page-header">
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О сериалах</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li style="float:right"><a href="catalog/catalog.html">Каталог</a></li>
+    </ul>
+    </header>
+<main>
+
+<div class="addseries">
+   <div class="container">
+    <h1 class="subheading">Заполните форму</h1>
+    <div class="container-addseries">
+
+
+
+  <form method="post" onsubmit="return ValidForm()">
+
+        <div class="row">
+      <div class="col-25">
+        <label for="name">Название сериала</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="Name" placeholder="Введите название сериала.." required>
+      </div>
+    </div>    
+
+        <div class="row">
+      <div class="col-25">
+        <label for="originalname">Название в оригинале</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="originalname" name="OriginalName" placeholder="Введите название сериала в оригинале.." required>
+      </div>
+    </div>   
+
+        <div class="row">
+      <div class="col-25">
+        <label for="year">Год выпуска</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="year" name="Year" placeholder="Введите год выпуска сериала (1940-2029).." required>
+      </div>
+    </div> 
+
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Страна</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="country" name="Country" placeholder="Введите страну производства сериала.." required>
+      </div>
+    </div>
+
+        <div class="row">
+      <div class="col-25">
+        <label for="genre">Жанр</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="genre" name="Genre" placeholder="Введите жанр сериала.." required>
+      </div>
+    </div>
+
+        <div class="row">
+      <div class="col-25">
+        <label for="producer">Режиссёр</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="producer" name="Producer" placeholder="Введите имя режиссёра.." required>
+      </div>
+    </div>
+
+        <div class="row">
+      <div class="col-25">
+        <label for="budget">Бюджет</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="budget" name="Budget" placeholder="Введите бюджет сериала.." required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="premiere">Премьера в мире</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="premiere" name="Premiere" placeholder="Введите дату премьеры в мире.." required>
+      </div>
+    </div>    
+
+        <div class="row">
+      <div class="col-25">
+        <label for="age">Возраст</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="age" name="Age" placeholder="Введите ограничения по возрасту.." required>
+      </div>
+    </div> 
+
+        <div class="row">
+      <div class="col-25">
+        <label for="duration">Длительность серии</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="duration" name="Duration" placeholder="Введите среднюю длительность серии.." required>
+      </div>
+    </div> 
+
+        <div class="row">
+      <div class="col-25">
+        <label for="totaltime">Общее время</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="totaltime" name="Totaltime" placeholder="Введите общее время сериала.." required>
+      </div>
+    </div> 
+
+        <div class="row">
+      <div class="col-25">
+        <label for="rating">Рейтинг</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="rating" name="Rating" placeholder="Введите рейтинг.." required>
+      </div>
+    </div> 
+
+    <div class="row">
+      <div class="col-25">
+        <label for="description">Описание</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="description" name="Description" placeholder="Вставьте описание сериала.." required>
+      </div>
+    </div>
+    <p class id="message">ᅠ ᅠ</p>
+    <div class="row">
+      <input class="button" type="submit" value="Отправить форму">
+    </div>
+  </form>
+  </div>
+</div>
+</div>
+
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+      Контакты:
+      <a class="footer-email" href="mailto:lera.gizhik@gmail.com">lera.gizhik@gmail.com"</a>
+      <a class="footer-phone" href="tel:+79879173661">+7 (987) 917-36-61</a>
+    </div>
+    </footer>
+  </body>
+
+
+
+<!--       <script type="text/javascript">
+function ValidForm() {
+    var reM = /^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i;
+    var reY = /((19[4-9][0-9])|(20[0-2][0-9]))/;
+    var reN = /^[а-яА-Я -]+$/;
+    var reS = /^(https?:\/\/)?([\w\.]+)\.([a-z]{2,6}\.?)(\/[\w\.]*)*\/?$/;
+    var valid  = true;
+    var validM = reM.test(document.getElementById('email').value);
+    var validY = reY.test(document.getElementById('year').value);
+    var validN = reN.test(document.getElementById('name').value);
+    var validS = reS.test(document.getElementById('source').value);
+    if (!validS) {
+      document.getElementById('message').innerHTML = 'Некорректная ссылка!!';
+      valid = false;
+      }
+    if (!validY) {
+      document.getElementById('message').innerHTML = 'Год выпуска введён неправильно!';
+      valid = false;
+      }
+    if (!validM) {
+      document.getElementById('message').innerHTML = 'Адрес электронной почты введён неправильно!';
+      valid = false;
+    }
+    if (!validN) {
+      document.getElementById('message').innerHTML = 'Имя введёно неправильно!';
+      valid = false;
+    }
+    return valid;
+}
+  </script> -->
+
+</html>

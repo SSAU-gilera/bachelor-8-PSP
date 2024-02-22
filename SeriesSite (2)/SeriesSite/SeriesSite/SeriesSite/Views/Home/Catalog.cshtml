@@ -1,0 +1,195 @@
+﻿@{
+    ViewBag.Title = "Series.Catalog";
+}
+<link rel="stylesheet" href="~/css/catalog.css" />
+
+<script>
+    function myFunctionFilter() {
+        let f = document.querySelector('.okno-filters');
+        if (f.style.display = 'none') {
+            f.style.display = 'flex';
+            f.style.flexDirection = 'column';
+            f.style.justifyContent = 'center';
+        }
+    }
+    function myFunctionFilterOk() {
+        document.querySelector('.okno-filters').style.display = 'none';
+    }
+</script>
+
+<div class="hat">
+    <p style="color:red">@ViewBag.Message</p>
+</div>
+<div class="filter-bar-wrapper">
+    <div class="filter-bar">
+        <button type="submit" onclick="myFunctionFilter()" class="filter-bar-right">Все фильтры</button>
+    </div>
+</div>
+<div id="myDropdownF" class="okno-filters">
+    <form name="filters" method="post" onSubmit="return myFunctionFilterOk();">
+        <div class="cd-filter-block">
+            <h4>Жанр</h4>
+            <div class="cd-filter-content cd-filters list">
+                <div>
+                    <input class="filter" name="genre" data-filter=".detective"
+                           type="checkbox" id="detective" value="Детектив">
+                    <label class="checkbox-label" for="detective">Детектив</label>
+                </div>
+                <div>
+                    <input class="filter" name="genre" data-filter=".horror"
+                           type="checkbox" id="horror" value="Ужасы">
+                    <label class="checkbox-label" for="horror">Ужасы</label>
+                </div>
+                <div>
+                    <input class="filter" name="genre" data-filter=".thriller"
+                           type="checkbox" id="thriller" value="Триллер">
+                    <label class="checkbox-label" for="thriller">Триллер</label>
+                </div>
+                <div>
+                    <input class="filter" name="genre" data-filter=".drama"
+                           type="checkbox" id="drama" value="Драма">
+                    <label class="checkbox-label" for="drama">Драма</label>
+                </div>
+                <div>
+                    <input class="filter" name="genre" data-filter=".fiction"
+                           type="checkbox" id="fiction" value="Фантастика">
+                    <label class="checkbox-label" for="fiction">Фантастика</label>
+                </div>
+                <div>
+                    <input class="filter" name="genre" data-filter=".melodrama"
+                           type="checkbox" id="melodrama" value="Мелодрама">
+                    <label class="checkbox-label" for="melodrama">Мелодрама</label>
+                </div>
+                <div>
+                    <input class="filter" name="genre" data-filter=".fantasy"
+                           type="checkbox" id="fantasy" value="Фэнтези">
+                    <label class="checkbox-label" for="fantasy">Фэнтези</label>
+                </div>
+                <div>
+                    <input class="filter" name="genre" data-filter=".action"
+                           type="checkbox" id="action" value="Боевик">
+                    <label class="checkbox-label" for="action">Боевик</label>
+                </div>
+                <div>
+                    <input class="filter" name="genre" data-filter=".musical"
+                           type="checkbox" id="musical" value="Мюзикл">
+                    <label class="checkbox-label" for="musical">Мюзикл</label>
+                </div>
+                <div>
+                    <input class="filter" name="genre" data-filter=".comedy"
+                           type="checkbox" id="comedy" value="Комедия">
+                    <label class="checkbox-label" for="comedy">Комедия</label>
+                </div>
+                <div>
+                    <input class="filter" name="genre" data-filter=".historical"
+                           type="checkbox" id="historical" value="История">
+                    <label class="checkbox-label" for="historical">История</label>
+                </div>
+                <div>
+                    <input class="filter" name="genre" data-filter=".sport"
+                           type="checkbox" id="sport" value="Спорт">
+                    <label class="checkbox-label" for="sport">Спорт</label>
+                </div>
+                </div> <!-- cd-filter-content -->
+            </div> <!-- cd-filter-block -->
+
+        <div class="cd-filter-block">
+            <h4>Страна</h4>
+            <div class="cd-filter-content">
+                <div class="cd-select cd-filters">
+                    <select class="filter" name="country" id="country">
+                        <option value="Выбрать страну">Выбрать страну</option>
+                        <option value="США">США</option>
+                        <option value="Великобритания">Великобритания</option>
+                        <option value="Германия">Германия</option>
+                        <option value="Норвегия">Норвегия</option>
+                        <option value="Россия">Россия</option>
+                        <option value="Южная Корея">Южная Корея</option>
+                    </select>
+                </div> <!-- cd-select -->
+            </div> <!-- cd-filter-content -->
+        </div> <!-- cd-filter-block -->
+        <div class="modal-footer">
+            <input type="submit" value="Ок" />
+        </div>
+    </form>
+</div>
+
+<div class="product-list">
+
+    <div class="product-list-1-column">
+        @for (int i = 0; i < ViewBag.ListSerials.Count && i < 3; i++)
+        {
+            <div class="product-card-wrapper">
+                <a href="~/Home/Object/@ViewBag.ListSerials[i].Id" id=@ViewBag.ListSerials[i].Id>
+                    <img src=@ViewBag.ListImages[i] width="300" height="400"></img>
+                    <div class="product-card-bottom">
+                        <div class="product-card-bottom-description">
+                            <div class="product-card-bottom-description_Name">@ViewBag.ListSerials[i].Name</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+    <div class="product-list-1-column">
+        @for (int i = 3; i < ViewBag.ListSerials.Count && i < 6; i++)
+        {
+            <div class="product-card-wrapper">
+                <a href="~/Home/Object/@ViewBag.ListSerials[i].Id" id=@ViewBag.ListSerials[i].Id>
+                    <img src=@ViewBag.ListImages[i] width="300" height="400"></img>
+                    <div class="product-card-bottom">
+                        <div class="product-card-bottom-description">
+                            <div class="product-card-bottom-description_Name">@ViewBag.ListSerials[i].Name</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+    <div class="product-list-1-column">
+        @for (int i = 6; i < ViewBag.ListSerials.Count && i < 9; i++)
+        {
+            <div class="product-card-wrapper">
+                <a href="~/Home/Object/@ViewBag.ListSerials[i].Id" id=@ViewBag.ListSerials[i].Id>
+                    <img src=@ViewBag.ListImages[i] width="300" height="400"></img>
+                    <div class="product-card-bottom">
+                        <div class="product-card-bottom-description">
+                            <div class="product-card-bottom-description_Name">@ViewBag.ListSerials[i].Name</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+    <div class="product-list-1-column">
+        @for (int i = 9; i < ViewBag.ListSerials.Count && i < 12; i++)
+        {
+            <div class="product-card-wrapper">
+                <a href="~/Home/Object/@ViewBag.ListSerials[i].Id" id=@ViewBag.ListSerials[i].Id>
+                    <img src=@ViewBag.ListImages[i] width="300" height="400"></img>
+                    <div class="product-card-bottom">
+                        <div class="product-card-bottom-description">
+                            <div class="product-card-bottom-description_Name">@ViewBag.ListSerials[i].Name</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+    <div class="product-list-1-column">
+        @for (int i = 12; i < ViewBag.ListSerials.Count && i < 15; i++)
+        {
+            <div class="product-card-wrapper">
+                <a href="~/Home/Object/@ViewBag.ListSerials[i].Id" id=@ViewBag.ListSerials[i].Id>
+                    <img src=@ViewBag.ListImages[i] width="300" height="400"></img>
+                    <div class="product-card-bottom">
+                        <div class="product-card-bottom-description">
+                            <div class="product-card-bottom-description_Name">@ViewBag.ListSerials[i].Name</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>
